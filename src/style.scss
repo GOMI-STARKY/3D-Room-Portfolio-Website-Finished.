@@ -700,17 +700,26 @@ ul {
 
 .loading-screen-button {
   font-family: "Motley Forces";
-  @include vars.centered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
-  padding: 10px 40px;
+  padding: 20px 40px;
   outline: none;
   color: #e6dede;
   border-radius: 1.2rem;
   border: none;
   font-size: 42px;
+  max-width: 90vw;
+  text-align: center;
+  line-height: 1.2;
+  word-wrap: break-word;
+  white-space: normal;
 
   @include media.media("<=tablet") {
-    font-size: 32px;
+    font-size: 28px;
+    padding: 20px 30px;
+    max-width: 85vw;
   }
 }
 
