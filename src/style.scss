@@ -7,7 +7,7 @@
 
 $themes: (
   light: (
-    base-dark-purple: #6c3f7c,
+    base-dark-purple: #cf49ff,
     base-purple: #6e5e9c,
     base-purple-200: #cdb3d6,
     base-pink: #eedfe4,
@@ -386,7 +386,7 @@ ul {
   cursor: pointer;
   transform: rotate(-15deg);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 255, 4, 0.24) 0px 3px 8px;
 
   &:hover {
     transform: rotate(45deg) scale(1.3);

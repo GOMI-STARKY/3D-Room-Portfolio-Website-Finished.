@@ -17,15 +17,15 @@ import themeFragmentShader from "./shaders/theme/fragment.glsl";
 // Background Music
 let pianoDebounceTimer = null;
 let isMusicFaded = false;
-const MUSIC_FADE_TIME = 500;
+const MUSIC_FADE_TIME = 1000;
 const PIANO_TIMEOUT = 2000;
-const BACKGROUND_MUSIC_VOLUME = 1;
+const BACKGROUND_MUSIC_VOLUME = 3;
 const FADED_VOLUME = 0;
 
 const backgroundMusic = new Howl({
   src: ["/audio/music/cosmic_candy.ogg"],
   loop: true,
-  volume: 1,
+  volume: 3,
 });
 
 const fadeOutBackgroundMusic = () => {
@@ -74,7 +74,7 @@ const pianoKeyMap = {
   G2_Key: "Key_5",
   "G#2_Key": "Key_4",
   A2_Key: "Key_3",
-  "A#2_Key": "Key_2",
+  "A#3_Key": "Key_2",
   B2_Key: "Key_1",
 };
 
@@ -318,7 +318,7 @@ manager.onLoad = function () {
   loadingScreenButton.style.background = "#401d49";
   loadingScreenButton.style.color = "#e6dede";
   loadingScreenButton.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
-  loadingScreenButton.textContent = "Come In!";
+  loadingScreenButton.textContent = "Come In, Lets Get the Party Started!🥳";
   loadingScreenButton.style.cursor = "pointer";
   loadingScreenButton.style.transition =
     "transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
@@ -1530,8 +1530,8 @@ let currentIntersects = [];
 let currentHoveredObject = null;
 
 const socialLinks = {
-  GitHub: "https://github.com/andrewwoan/sooahkimsfolio",
-  YouTube: "https://youtu.be/AB6sulUMRGE",
+  GitHub: "https://github.com/GOMI-STARKY/3D-Room-Portfolio-Website-Finished.",
+  YouTube: "https://youtube.com",
   Twitter: "https://www.twitter.com/",
 };
 
@@ -2040,7 +2040,7 @@ const render = (timestamp) => {
 
   // Fan rotate animation
   xAxisFans.forEach((fan) => {
-    fan.rotation.x -= 0.04;
+    fan.rotation.x -= 0.08;
   });
 
   yAxisFans.forEach((fan) => {
